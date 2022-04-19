@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <div class="wordart italic-outline">
-        <Countdown date={Date.now() + 5000}>
+        <Countdown date={new Date(2022, 3, 21, 19, 30)}>
           <Completionist />
         </Countdown>
       </div>
