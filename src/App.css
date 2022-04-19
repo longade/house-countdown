@@ -1,5 +1,43 @@
 .App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(255, 71, 0);
+  background: -moz-linear-gradient(90deg, rgba(255, 71, 0, 1) 0%, rgba(221, 255, 15, 1) 50%, rgba(91, 255, 0, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(255, 71, 0, 1) 0%, rgba(221, 255, 15, 1) 50%, rgba(91, 255, 0, 1) 100%);
+  background: linear-gradient(90deg, rgba(255, 71, 0, 1) 0%, rgba(221, 255, 15, 1) 50%, rgba(91, 255, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff4700", endColorstr="#5bff00", GradientType=1);
+}
+
+.wordart {
   text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wordart.italic-outline {
+    transform: scale(1, 1.3);
+    -webkit-transform: scale(1, 1.3);
+    -moz-transform: scale(1, 1.3);
+    -o-transform: scale(1, 1.3);
+    -ms-transform: scale(1, 1.3);
+}
+
+.wordart.italic-outline > span {
+  letter-spacing: -0.01em;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #fff;
+    -webkit-text-stroke: 0.01em #000;
+    filter: progid:DXImageTransform.Microsoft.Glow(Color=#000000, Strength=1);
+    text-shadow: 0.03em 0.03em 0 #6D6D6D;
 }
 
 .App-logo {
@@ -32,6 +70,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
